@@ -1,0 +1,10 @@
+/* Localized versions of Info.plist keys */
+
+/* For the app's menu bar. */
+CFBundleName = "PSYExp";
+
+/* For the Finder's info panel. */
+CFBundleGetInfoString = "0.1.5, Copyright 2012, Dean Miller";
+
+
+

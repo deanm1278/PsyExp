@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6921CC2117D697D80074DA1D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6921CC2017D697D80074DA1D /* Cocoa.framework */; };
+		6921CC2B17D697D80074DA1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6921CC2917D697D80074DA1D /* InfoPlist.strings */; };
+		6921CC2D17D697D80074DA1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6921CC2C17D697D80074DA1D /* main.m */; };
+		6921CC3117D697D80074DA1D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6921CC2F17D697D80074DA1D /* Credits.rtf */; };
+		6921CC3417D697D80074DA1D /* PSYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6921CC3317D697D80074DA1D /* PSYAppDelegate.m */; };
+		6921CC3717D697D80074DA1D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6921CC3517D697D80074DA1D /* MainMenu.xib */; };
+		6921CC4A17D698F80074DA1D /* PSYDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6921CC4817D698F80074DA1D /* PSYDocument.m */; };
+		6921CC4E17D699610074DA1D /* PSYWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6921CC4D17D699610074DA1D /* PSYWindowController.m */; };
+		6921CC5117D699CA0074DA1D /* PSYExpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6921CC5017D699CA0074DA1D /* PSYExpView.m */; };
+		6924E05217DA43ED009657EC /* PSYDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6924E05117DA43ED009657EC /* PSYDisplay.m */; };
+		69582C1F17E0DBAF0052FEB6 /* end.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69582C1D17E0DBAF0052FEB6 /* end.bmp */; };
+		69582C2017E0DBAF0052FEB6 /* restPeriod.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69582C1E17E0DBAF0052FEB6 /* restPeriod.bmp */; };
+		69582C2217E0DEF00052FEB6 /* dataWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69582C2117E0DEF00052FEB6 /* dataWindow.xib */; };
+		69582C2517E0E1EB0052FEB6 /* PSYDataWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69582C2417E0E1EB0052FEB6 /* PSYDataWindowController.m */; };
+		69582C2717E10BA10052FEB6 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69582C2617E10BA00052FEB6 /* Preferences.xib */; };
+		696AE8AA17DE4560004D4455 /* fixationCross.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 696AE8A917DE4560004D4455 /* fixationCross.bmp */; };
+		69922FDD17F2096C000D16DC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69922FDC17F2096C000D16DC /* OpenGL.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		69922FDF17F20D24000D16DC /* after_practice_instructions.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69922FDE17F20D24000D16DC /* after_practice_instructions.bmp */; };
+		69922FE117F20D48000D16DC /* instructions.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69922FE017F20D48000D16DC /* instructions.bmp */; };
+		69AB6A4617E26E5C0059E656 /* NewParticipant.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AB6A4517E26E5C0059E656 /* NewParticipant.xib */; };
+		69B031D017D918B00091EED6 /* PSYError.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B031CF17D918B00091EED6 /* PSYError.m */; };
+		69B031D217D929870091EED6 /* ExpWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B031D117D929870091EED6 /* ExpWindow.xib */; };
+		69CDAD7417EB9AB200DD90D7 /* continue.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69CDAD7317EB9AB200DD90D7 /* continue.bmp */; };
+		69CDAD7817EBA19400DD90D7 /* icons.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 69CDAD7717EBA19400DD90D7 /* icons.iconset */; };
+		69ED5E0D17E6746200DC6D5A /* noiseR.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69ED5E0917E6746200DC6D5A /* noiseR.bmp */; };
+		69ED5E0E17E6746200DC6D5A /* noiseG.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69ED5E0A17E6746200DC6D5A /* noiseG.bmp */; };
+		69ED5E0F17E6746200DC6D5A /* targetG.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69ED5E0B17E6746200DC6D5A /* targetG.bmp */; };
+		69ED5E1017E6746200DC6D5A /* targetR.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 69ED5E0C17E6746200DC6D5A /* targetR.bmp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6921CC1D17D697D80074DA1D /* PsyExp_v1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PsyExp_v1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6921CC2017D697D80074DA1D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6921CC2317D697D80074DA1D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6921CC2417D697D80074DA1D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6921CC2517D697D80074DA1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6921CC2817D697D80074DA1D /* PsyExp_v1.0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PsyExp_v1.0-Info.plist"; sourceTree = "<group>"; };
+		6921CC2A17D697D80074DA1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6921CC2C17D697D80074DA1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6921CC2E17D697D80074DA1D /* PsyExp_v1.0-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PsyExp_v1.0-Prefix.pch"; sourceTree = "<group>"; };
+		6921CC3017D697D80074DA1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6921CC3217D697D80074DA1D /* PSYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSYAppDelegate.h; sourceTree = "<group>"; };
+		6921CC3317D697D80074DA1D /* PSYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSYAppDelegate.m; sourceTree = "<group>"; };
+		6921CC3617D697D80074DA1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6921CC4717D698F80074DA1D /* PSYDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYDocument.h; sourceTree = "<group>"; };
+		6921CC4817D698F80074DA1D /* PSYDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYDocument.m; sourceTree = "<group>"; };
+		6921CC4C17D699610074DA1D /* PSYWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYWindowController.h; sourceTree = "<group>"; };
+		6921CC4D17D699610074DA1D /* PSYWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYWindowController.m; sourceTree = "<group>"; };
+		6921CC4F17D699CA0074DA1D /* PSYExpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYExpView.h; sourceTree = "<group>"; };
+		6921CC5017D699CA0074DA1D /* PSYExpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYExpView.m; sourceTree = "<group>"; };
+		6924E05017DA43ED009657EC /* PSYDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYDisplay.h; sourceTree = "<group>"; };
+		6924E05117DA43ED009657EC /* PSYDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYDisplay.m; sourceTree = "<group>"; };
+		69582C1D17E0DBAF0052FEB6 /* end.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = end.bmp; sourceTree = "<group>"; };
+		69582C1E17E0DBAF0052FEB6 /* restPeriod.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = restPeriod.bmp; sourceTree = "<group>"; };
+		69582C2117E0DEF00052FEB6 /* dataWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dataWindow.xib; sourceTree = "<group>"; };
+		69582C2317E0E1EB0052FEB6 /* PSYDataWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYDataWindowController.h; sourceTree = "<group>"; };
+		69582C2417E0E1EB0052FEB6 /* PSYDataWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYDataWindowController.m; sourceTree = "<group>"; };
+		69582C2617E10BA00052FEB6 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		696AE8A917DE4560004D4455 /* fixationCross.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = fixationCross.bmp; sourceTree = "<group>"; };
+		69922FDC17F2096C000D16DC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		69922FDE17F20D24000D16DC /* after_practice_instructions.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = after_practice_instructions.bmp; sourceTree = "<group>"; };
+		69922FE017F20D48000D16DC /* instructions.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = instructions.bmp; sourceTree = "<group>"; };
+		699557AC17DD078500B157D1 /* PSYConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSYConstants.h; path = ../PSYConstants.h; sourceTree = "<group>"; };
+		69AB6A4517E26E5C0059E656 /* NewParticipant.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewParticipant.xib; sourceTree = "<group>"; };
+		69B031CE17D918B00091EED6 /* PSYError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYError.h; sourceTree = "<group>"; };
+		69B031CF17D918B00091EED6 /* PSYError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYError.m; sourceTree = "<group>"; };
+		69B031D117D929870091EED6 /* ExpWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpWindow.xib; sourceTree = "<group>"; };
+		69CDAD7317EB9AB200DD90D7 /* continue.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = continue.bmp; path = ../../continue.bmp; sourceTree = "<group>"; };
+		69CDAD7717EBA19400DD90D7 /* icons.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icons.iconset; sourceTree = "<group>"; };
+		69ED5E0917E6746200DC6D5A /* noiseR.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = noiseR.bmp; sourceTree = "<group>"; };
+		69ED5E0A17E6746200DC6D5A /* noiseG.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = noiseG.bmp; sourceTree = "<group>"; };
+		69ED5E0B17E6746200DC6D5A /* targetG.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = targetG.bmp; sourceTree = "<group>"; };
+		69ED5E0C17E6746200DC6D5A /* targetR.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = targetR.bmp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6921CC1A17D697D80074DA1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69922FDD17F2096C000D16DC /* OpenGL.framework in Frameworks */,
+				6921CC2117D697D80074DA1D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6921CC1417D697D80074DA1D = {
+			isa = PBXGroup;
+			children = (
+				69922FDC17F2096C000D16DC /* OpenGL.framework */,
+				6921CC2617D697D80074DA1D /* PsyExp_v1.0 */,
+				6921CC1F17D697D80074DA1D /* Frameworks */,
+				6921CC1E17D697D80074DA1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6921CC1E17D697D80074DA1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6921CC1D17D697D80074DA1D /* PsyExp_v1.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6921CC1F17D697D80074DA1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6921CC2017D697D80074DA1D /* Cocoa.framework */,
+				6921CC2217D697D80074DA1D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6921CC2217D697D80074DA1D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6921CC2317D697D80074DA1D /* AppKit.framework */,
+				6921CC2417D697D80074DA1D /* CoreData.framework */,
+				6921CC2517D697D80074DA1D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6921CC2617D697D80074DA1D /* PsyExp_v1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				6921CC3217D697D80074DA1D /* PSYAppDelegate.h */,
+				6921CC3317D697D80074DA1D /* PSYAppDelegate.m */,
+				6921CC4717D698F80074DA1D /* PSYDocument.h */,
+				6921CC4817D698F80074DA1D /* PSYDocument.m */,
+				6921CC4C17D699610074DA1D /* PSYWindowController.h */,
+				6921CC4D17D699610074DA1D /* PSYWindowController.m */,
+				6921CC4F17D699CA0074DA1D /* PSYExpView.h */,
+				6921CC5017D699CA0074DA1D /* PSYExpView.m */,
+				6924E05017DA43ED009657EC /* PSYDisplay.h */,
+				6924E05117DA43ED009657EC /* PSYDisplay.m */,
+				69B031CE17D918B00091EED6 /* PSYError.h */,
+				69B031CF17D918B00091EED6 /* PSYError.m */,
+				69582C2317E0E1EB0052FEB6 /* PSYDataWindowController.h */,
+				69582C2417E0E1EB0052FEB6 /* PSYDataWindowController.m */,
+				6921CC2717D697D80074DA1D /* Supporting Files */,
+			);
+			path = PsyExp_v1.0;
+			sourceTree = "<group>";
+		};
+		6921CC2717D697D80074DA1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				696AE8AB17DE457F004D4455 /* images */,
+				699557AC17DD078500B157D1 /* PSYConstants.h */,
+				69CDAD7717EBA19400DD90D7 /* icons.iconset */,
+				6921CC2817D697D80074DA1D /* PsyExp_v1.0-Info.plist */,
+				6921CC2917D697D80074DA1D /* InfoPlist.strings */,
+				6921CC2C17D697D80074DA1D /* main.m */,
+				6921CC2E17D697D80074DA1D /* PsyExp_v1.0-Prefix.pch */,
+				6921CC2F17D697D80074DA1D /* Credits.rtf */,
+				6921CC3517D697D80074DA1D /* MainMenu.xib */,
+				69B031D117D929870091EED6 /* ExpWindow.xib */,
+				69582C2117E0DEF00052FEB6 /* dataWindow.xib */,
+				69582C2617E10BA00052FEB6 /* Preferences.xib */,
+				69AB6A4517E26E5C0059E656 /* NewParticipant.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		696AE8AB17DE457F004D4455 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				69922FE017F20D48000D16DC /* instructions.bmp */,
+				69922FDE17F20D24000D16DC /* after_practice_instructions.bmp */,
+				69ED5E0917E6746200DC6D5A /* noiseR.bmp */,
+				69ED5E0A17E6746200DC6D5A /* noiseG.bmp */,
+				69ED5E0B17E6746200DC6D5A /* targetG.bmp */,
+				69ED5E0C17E6746200DC6D5A /* targetR.bmp */,
+				69582C1D17E0DBAF0052FEB6 /* end.bmp */,
+				69582C1E17E0DBAF0052FEB6 /* restPeriod.bmp */,
+				69CDAD7317EB9AB200DD90D7 /* continue.bmp */,
+				696AE8A917DE4560004D4455 /* fixationCross.bmp */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6921CC1C17D697D80074DA1D /* PsyExp_v1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6921CC3A17D697D80074DA1D /* Build configuration list for PBXNativeTarget "PsyExp_v1.0" */;
+			buildPhases = (
+				6921CC1917D697D80074DA1D /* Sources */,
+				6921CC1A17D697D80074DA1D /* Frameworks */,
+				6921CC1B17D697D80074DA1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PsyExp_v1.0;
+			productName = PsyExp_v1.0;
+			productReference = 6921CC1D17D697D80074DA1D /* PsyExp_v1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6921CC1517D697D80074DA1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PSY;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dean Miller";
+			};
+			buildConfigurationList = 6921CC1817D697D80074DA1D /* Build configuration list for PBXProject "PsyExp_v1.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6921CC1417D697D80074DA1D;
+			productRefGroup = 6921CC1E17D697D80074DA1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6921CC1C17D697D80074DA1D /* PsyExp_v1.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6921CC1B17D697D80074DA1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6921CC2B17D697D80074DA1D /* InfoPlist.strings in Resources */,
+				6921CC3117D697D80074DA1D /* Credits.rtf in Resources */,
+				6921CC3717D697D80074DA1D /* MainMenu.xib in Resources */,
+				69B031D217D929870091EED6 /* ExpWindow.xib in Resources */,
+				696AE8AA17DE4560004D4455 /* fixationCross.bmp in Resources */,
+				69582C1F17E0DBAF0052FEB6 /* end.bmp in Resources */,
+				69582C2017E0DBAF0052FEB6 /* restPeriod.bmp in Resources */,
+				69582C2217E0DEF00052FEB6 /* dataWindow.xib in Resources */,
+				69582C2717E10BA10052FEB6 /* Preferences.xib in Resources */,
+				69AB6A4617E26E5C0059E656 /* NewParticipant.xib in Resources */,
+				69ED5E0D17E6746200DC6D5A /* noiseR.bmp in Resources */,
+				69ED5E0E17E6746200DC6D5A /* noiseG.bmp in Resources */,
+				69ED5E0F17E6746200DC6D5A /* targetG.bmp in Resources */,
+				69ED5E1017E6746200DC6D5A /* targetR.bmp in Resources */,
+				69CDAD7417EB9AB200DD90D7 /* continue.bmp in Resources */,
+				69CDAD7817EBA19400DD90D7 /* icons.iconset in Resources */,
+				69922FDF17F20D24000D16DC /* after_practice_instructions.bmp in Resources */,
+				69922FE117F20D48000D16DC /* instructions.bmp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6921CC1917D697D80074DA1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6921CC2D17D697D80074DA1D /* main.m in Sources */,
+				6921CC3417D697D80074DA1D /* PSYAppDelegate.m in Sources */,
+				6921CC4A17D698F80074DA1D /* PSYDocument.m in Sources */,
+				6921CC4E17D699610074DA1D /* PSYWindowController.m in Sources */,
+				6921CC5117D699CA0074DA1D /* PSYExpView.m in Sources */,
+				69B031D017D918B00091EED6 /* PSYError.m in Sources */,
+				6924E05217DA43ED009657EC /* PSYDisplay.m in Sources */,
+				69582C2517E0E1EB0052FEB6 /* PSYDataWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6921CC2917D697D80074DA1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6921CC2A17D697D80074DA1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6921CC2F17D697D80074DA1D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6921CC3017D697D80074DA1D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6921CC3517D697D80074DA1D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6921CC3617D697D80074DA1D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6921CC3817D697D80074DA1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6921CC3917D697D80074DA1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6921CC3B17D697D80074DA1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PsyExp_v1.0/PsyExp_v1.0-Prefix.pch";
+				INFOPLIST_FILE = "PsyExp_v1.0/PsyExp_v1.0-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6921CC3C17D697D80074DA1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PsyExp_v1.0/PsyExp_v1.0-Prefix.pch";
+				INFOPLIST_FILE = "PsyExp_v1.0/PsyExp_v1.0-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6921CC1817D697D80074DA1D /* Build configuration list for PBXProject "PsyExp_v1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6921CC3817D697D80074DA1D /* Debug */,
+				6921CC3917D697D80074DA1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6921CC3A17D697D80074DA1D /* Build configuration list for PBXNativeTarget "PsyExp_v1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6921CC3B17D697D80074DA1D /* Debug */,
+				6921CC3C17D697D80074DA1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6921CC1517D697D80074DA1D /* Project object */;
+}
